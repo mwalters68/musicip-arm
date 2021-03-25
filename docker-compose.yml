@@ -1,0 +1,16 @@
+version: '3'
+services:
+  musicip:
+    image: mwalters68/musicip-arm
+    container_name: musicip
+    platform: armhf
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=London/Europe
+    ports:
+      - 10002:10002
+    volumes:
+      - <path to music>:/music:ro
+      - <path to data>:/config:rw
+    restart: unless-stopped

@@ -6,7 +6,7 @@ The image uses a multi-stage build with the first step being used to compile box
 
 This example build command uses docker buildx onto specify the armhf platform which is required for the box86 compilation when running on an aarch64 host.  This has been tested on an Odroid N2 running Ubuntu 20.04
 ```shell
-# git clone https://github.bmc.com/walters68/musicip-arm
+# git clone https://github.com/walters68/musicip-arm
 # cd musicip-arm
 # docker buildx build --platform=armhf -t musicip-arm .
 ```

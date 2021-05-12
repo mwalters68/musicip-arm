@@ -1,5 +1,5 @@
 # musicip-arm
-MusicIP server for ARM using [box86](https://github.com/ptitSeb/box86) to provide x86 emulation for the MusicMagicServer.exe binary.  Based on https://github.com/ptoulouse/docker-musicip and [Spicefly](https://www.spicefly.com/).
+MusicIP server for ARM using [box86](https://github.com/ptitSeb/box86) to provide x86 emulation for the MusicMagicServer binary.  Based on https://github.com/ptoulouse/docker-musicip and [Spicefly](https://www.spicefly.com/).
 
 ## Build Details
 The image uses a multi-stage build with the first step being used to compile box86 and the resulting binary being copied to the final image in the second stage.  Ubuntu:20.04 is used as the base.

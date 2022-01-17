@@ -4,7 +4,7 @@ MusicIP server for ARM using [box86](https://github.com/ptitSeb/box86) to provid
 ## Build Details
 The image uses a multi-stage build with the first step being used to compile box86 and the resulting binary being copied to the final image in the second stage.  Ubuntu:20.04 is used as the base.
 
-This example build command uses docker buildx onto specify the armhf platform which is required for the box86 compilation when running on an aarch64 host.  This has been tested on an Odroid N2 running Ubuntu 20.04
+This example build command uses docker buildx onto specify the armhf platform which is required for the box86 compilation when running on an aarch64 host.  This has been tested on an Odroid N2 running Ubuntu 20.04 and reported to wotk on Raspberry Pi 4 and DietPi systems.
 ```shell
 # git clone https://github.com/walters68/musicip-arm
 # cd musicip-arm
